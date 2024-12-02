@@ -11,3 +11,5 @@ set shiftwidth=4
 set tabstop=4
 
 highlight Normal guibg=none
+
+colorscheme tokyonight-moon
