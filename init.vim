@@ -6,7 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 call plug#end()
 
 
-lua require('main')
+lua require('init')
 
 " Yank to clipboard
 set clipboard+=unnamedplus
