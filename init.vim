@@ -15,6 +15,10 @@ set expandtab       " Use spaces instead of tabs
 set shiftwidth=4    " Number of spaces per indentation level
 set tabstop=4       " Number of spaces per tab
 
+" 设置自动缩进
+" (Neo)Vim 默认有三种自动缩进模式 cindent, autoindent, smartindent
+set smartindent
+
 " Set colorscheme (will override the background color)
 colorscheme cyberdream
 
