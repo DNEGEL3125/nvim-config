@@ -14,3 +14,6 @@ end, {})
 
 -- Use `K` to show type info
 vim.api.nvim_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+
+-- Go to definition
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true, silent = true })
