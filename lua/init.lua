@@ -13,7 +13,11 @@ vim.api.nvim_create_user_command('Diag', function()
 end, {})
 
 -- Use `K` to show type info
-vim.api.nvim_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+if vim.g.vscode then
+    -- Do nothing
+else
+    vim.api.nvim_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+end
 
 -- Go to definition
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true, silent = true })

@@ -20,7 +20,11 @@ set tabstop=4       " Number of spaces per tab
 set smartindent
 
 " Set colorscheme (will override the background color)
-colorscheme cyberdream
+if exists('g:vscode')
+    " Do nothing
+else
+    colorscheme cyberdream
+endif
 
 " Set background color
 " highlight Normal guibg=none
