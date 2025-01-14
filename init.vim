@@ -32,7 +32,3 @@ endif
 " highlight Normal ctermbg=none
 " highlight NonText ctermbg=none
 
-function OpenMarkdownPreview (url)
-  execute "silent ! open -a Google\ Chrome -n --args --new-window " . a:url
-endfunction
-let g:mkdp_browserfunc = 'OpenMarkdownPreview'
