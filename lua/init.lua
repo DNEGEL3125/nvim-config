@@ -5,7 +5,7 @@ require "config.md-preview"
 require "config.statusline"
 require "config.colorscheme"
 require "config.lspconfig"
--- require "config.autoclose"
+require "config.telescope"
 
 -- Use `:Diag` to show warnings/errors
 vim.api.nvim_create_user_command('Diag', function()
