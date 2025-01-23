@@ -1,6 +1,10 @@
 -- Ensure nvim-lspconfig is required
 local lspconfig = require('lspconfig')
 
+-- Rename the variable under your cursor.
+--  Most Language Servers support renaming across files, etc.
+vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
+
 -- Configure clangd
 lspconfig.clangd.setup({
   cmd = { "clangd" }, -- Adjust the path if clangd isn't in your PATH
