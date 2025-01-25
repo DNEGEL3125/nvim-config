@@ -7,6 +7,7 @@ require "config.colorscheme"
 require "config.lspconfig"
 require "config.telescope"
 require "config.debug"
+require "config.formatter"
 
 -- Use `:Diag` to show warnings/errors
 vim.api.nvim_create_user_command('Diag', function()
