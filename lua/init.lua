@@ -1,7 +1,6 @@
 require("config.lazy")
 require("config.treesitter-config") -- Added this line to initial file
 require("config.nvim-tree-config")
-require("config.md-preview")
 require("config.statusline")
 require("config.colorscheme")
 require("config.lspconfig")
