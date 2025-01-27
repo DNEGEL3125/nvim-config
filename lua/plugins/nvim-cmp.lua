@@ -1,10 +1,9 @@
-
 local M = {
 	"hrsh7th/nvim-cmp",
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-nvim-lua",
-		'hrsh7th/cmp-nvim-lsp-signature-help', -- For signature help
+		"hrsh7th/cmp-nvim-lsp-signature-help", -- For signature help
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
@@ -34,15 +33,15 @@ M.config = function()
 			["<C-e>"] = cmp.mapping.abort(),
 			["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 			["<Tab>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-            	cmp.select_next_item()
---                cmp.confirm()
-	        elseif vim.snippet.active({ direction = 1 }) then
-		        vim.snippet.jump(1)
-			else
-	         	fallback()
-	        end
-			end, {'i', 's' })
+				if cmp.visible() then
+					cmp.select_next_item()
+				--                cmp.confirm()
+				elseif vim.snippet.active({ direction = 1 }) then
+					vim.snippet.jump(1)
+				else
+					fallback()
+				end
+			end, { "i", "s" }),
 		}),
 		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },
@@ -67,4 +66,3 @@ M.config = function()
 end
 
 return M
-
