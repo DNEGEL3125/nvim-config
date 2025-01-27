@@ -1,3 +1,2 @@
-
 -- Keybindings
-vim.keymap.set('n', '<leader>fr', '<cmd>Telescope lsp_references<cr>')
+vim.keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>")
