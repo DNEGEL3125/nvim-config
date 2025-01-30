@@ -1,5 +1,5 @@
 require("config.lazy")
-require("config.highlight") -- Added this line to initial file
+require("config.highlight")
 require("config.nvim-tree")
 require("config.statusline")
 require("config.colorscheme")
