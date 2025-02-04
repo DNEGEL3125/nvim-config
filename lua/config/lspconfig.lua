@@ -31,4 +31,12 @@ lspconfig.rust_analyzer.setup({
 		-- You can add additional configuration here if needed
 	end,
 	capabilities = capabilities,
+	settings = {
+		["rust-analyzer"] = {
+			-- Enable automatic linting using Clippy when saving a Rust file
+			checkOnSave = {
+				command = "clippy",
+			},
+		},
+	},
 })
