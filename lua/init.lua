@@ -1,5 +1,6 @@
 require("config.lazy")
 require("config.highlight")
+require("config.noice")
 require("config.nvim-tree")
 require("config.statusline")
 require("config.colorscheme")
