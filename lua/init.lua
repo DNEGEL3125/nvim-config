@@ -15,12 +15,5 @@ vim.api.nvim_create_user_command("Diag", function()
 	vim.diagnostic.open_float(nil, { focusable = false, border = "rounded" })
 end, {})
 
--- Use `K` to show type info
-if vim.g.vscode then
-	-- Do nothing
-else
-	vim.api.nvim_set_keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
-end
-
 -- Go to definition
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true, silent = true, desc = "Go to definition" })
