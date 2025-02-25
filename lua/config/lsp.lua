@@ -41,4 +41,20 @@ lspconfig.rust_analyzer.setup({
 	},
 })
 
+-- Configure lua-language-server
 lspconfig.lua_ls.setup({})
+
+-- Configure typescript-language-server
+lspconfig.ts_ls.setup({
+	capabilities = capabilities,
+	init_options = {
+		plugins = {
+			{
+				name = "@vue/typescript-plugin",
+				location = "/opt/homebrew/bin/vue-language-server",
+				languages = { "vue" },
+			},
+		},
+	},
+	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+})
