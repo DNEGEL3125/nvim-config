@@ -58,3 +58,6 @@ lspconfig.ts_ls.setup({
 	},
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
+
+-- Configure gopls (Go language)
+lspconfig.gopls.setup({})
