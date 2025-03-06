@@ -51,7 +51,7 @@ lspconfig.ts_ls.setup({
 		plugins = {
 			{
 				name = "@vue/typescript-plugin",
-				location = "/opt/homebrew/bin/vue-language-server",
+				location = "/Users/dnegel3125/Library/pnpm/global/5/node_modules/@vue/language-server",
 				languages = { "vue" },
 			},
 		},
@@ -61,3 +61,6 @@ lspconfig.ts_ls.setup({
 
 -- Configure gopls (Go language)
 lspconfig.gopls.setup({})
+
+-- Configure vue-language-server
+lspconfig.volar.setup({})
