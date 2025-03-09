@@ -15,6 +15,7 @@ require("conform").setup({
 			"typescript",
 			"lua",
 			"rust",
+			"go",
 		}
 
 		-- Get the file type of the current file
