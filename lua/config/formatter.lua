@@ -7,6 +7,14 @@ require("conform").setup({
 		rust = { "rustfmt", lsp_format = "fallback" },
 		-- Conform will run the first available formatter
 		javascript = { "prettierd", "prettier", stop_after_first = true },
+		cpp = { "clang_format" },
+		c = { "clang_format" },
+	},
+	formatters = {
+		clang_format = {
+			command = "clang-format",
+			args = '--style="{BasedOnStyle: webkit}"',
+		},
 	},
 	format_on_save = function(bufnr)
 		-- Define the list of languages for which you want to enable format-on-save
