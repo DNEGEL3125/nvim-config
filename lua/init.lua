@@ -16,3 +16,5 @@ end, {})
 
 -- Go to definition
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true, silent = true, desc = "Go to definition" })
+
+vim.diagnostic.config({ virtual_lines = true })
