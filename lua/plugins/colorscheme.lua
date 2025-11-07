@@ -21,7 +21,7 @@ return {
 			hide_fillchars = false,
 
 			-- Modern borderless theme - also applies to fzf-lua
-			borderless_pickers = true,
+			borderless_pickers = false,
 
 			-- Set terminal colors used in `:terminal`
 			terminal_colors = true,
