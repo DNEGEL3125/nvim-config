@@ -3,10 +3,6 @@ require("mason").setup()
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
--- Rename the variable under your cursor.
--- Most Language Servers support renaming across files, etc.
-vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
-
 -- Configure pyright
 mason_lspconfig.setup({
 	ensure_installed = { "pyright" },
