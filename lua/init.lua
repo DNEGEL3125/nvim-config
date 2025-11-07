@@ -1,3 +1,8 @@
+-- Netrw is Neovim's built-in file explorer
+-- Disable it to avoid conflicts
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require("config.lazy")
 require("config.highlight")
 require("config.nvim-tree")
