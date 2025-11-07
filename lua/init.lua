@@ -5,6 +5,7 @@ require("config.statusline")
 require("config.lsp")
 require("config.debug")
 require("config.formatter")
+require("config.keymaps")
 
 -- Use `:Diag` to show warnings/errors
 vim.api.nvim_create_user_command("Diag", function()
