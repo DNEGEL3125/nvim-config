@@ -20,7 +20,7 @@ set tabstop=4       " Number of spaces per tab
 set smartindent
 
 " Enable line numbering
-set number
+set relativenumber
 
 " Set colorscheme (will override the background color)
 if exists('g:vscode')
