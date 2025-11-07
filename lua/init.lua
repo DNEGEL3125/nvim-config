@@ -6,7 +6,6 @@ require("config.colorscheme")
 require("config.lsp")
 require("config.debug")
 require("config.formatter")
-require("config.cmake-tools")
 
 -- Use `:Diag` to show warnings/errors
 vim.api.nvim_create_user_command("Diag", function()
