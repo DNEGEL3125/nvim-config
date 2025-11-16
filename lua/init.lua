@@ -16,3 +16,8 @@ require("config.keymaps")
 vim.api.nvim_create_user_command("Diag", function()
 	vim.diagnostic.open_float(nil, { focusable = false, border = "rounded" })
 end, {})
+
+-- Use `:Format` to format code
+vim.api.nvim_create_user_command("Format", function(args)
+	require("conform").format({ bufnr = args.buf })
+end, {})
