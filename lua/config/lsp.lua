@@ -17,6 +17,7 @@ vim.lsp.config("clangd", {
 	filetypes = { "c", "cpp", "objc", "objcpp" },
 	capabilities = capabilities, -- if using nvim-cmp
 })
+vim.lsp.enable("clangd")
 
 -- Configure rust-analyzer
 vim.lsp.config("rust_analyzer", {
@@ -33,6 +34,7 @@ vim.lsp.config("rust_analyzer", {
 		},
 	},
 })
+vim.lsp.enable("rust_analyzer")
 
 -- Configure lua-language-server
 vim.lsp.enable("lua_ls")
