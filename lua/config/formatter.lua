@@ -32,7 +32,7 @@ require("conform").setup({
 
 		-- Check if the current file type is in the `enabled_languages`
 		if vim.tbl_contains(enabled_languages, filetype) then
-			return { timeout_ms = 500, lsp_fallback = true } -- Enable formatting
+			return { timeout_ms = 2000, lsp_fallback = true } -- Enable formatting
 		else
 			return false -- Disable formatting
 		end
