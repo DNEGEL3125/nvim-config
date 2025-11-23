@@ -24,6 +24,7 @@ require("conform").setup({
 			"lua",
 			"rust",
 			"go",
+			"python",
 		}
 
 		-- Get the file type of the current file
