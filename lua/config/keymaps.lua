@@ -6,6 +6,10 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", {
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", {
 	desc = "Find buffer",
 })
+-- Find files
+vim.keymap.set("n", "<leader>fd", "<cmd>Telescope fd<cr>", {
+	desc = "Find files",
+})
 -- Go to definition
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
 	noremap = true,
