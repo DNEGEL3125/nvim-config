@@ -4,12 +4,10 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 -- Configure pyright
-mason_lspconfig.setup({
-	ensure_installed = { "pyright" },
-})
-vim.lsp.config("pyright", {
+vim.lsp.config("basedpyright", {
 	capabilities = capabilities,
 })
+vim.lsp.enable("basedpyright")
 
 -- Configure clangd
 vim.lsp.config("clangd", {
