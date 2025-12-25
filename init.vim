@@ -1,11 +1,3 @@
-call plug#begin('~/.local/share/nvim/plugged')
-
-" Place plugins here
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-call plug#end()
-
-
 lua require('init')
 
 " Yank to clipboard
