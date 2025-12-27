@@ -2,10 +2,10 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 -- Configure pyright
-vim.lsp.config("basedpyright", {
+vim.lsp.config("pyright", {
 	capabilities = capabilities,
 })
-vim.lsp.enable("basedpyright")
+vim.lsp.enable("pyright")
 
 -- Configure clangd
 vim.lsp.config("clangd", {
