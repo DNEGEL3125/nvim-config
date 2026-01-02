@@ -11,7 +11,8 @@ set tabstop=4       " Number of spaces per tab
 " (Neo)Vim 默认有三种自动缩进模式 cindent, autoindent, smartindent
 set smartindent
 
-" Enable line numbering
+" Shows absolute number on current line, relative numbers elsewhere
+set number
 set relativenumber
 
 " Set colorscheme (will override the background color)
